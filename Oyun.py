@@ -15,7 +15,7 @@ class Example(QtGui.QMainWindow):
         self.game = jeu_et_regle.GrilleJeu()
         self.btn = [[QtGui.QPushButton('', self)
                     for j in range(len(self.game.grille))]
-                    for i in range(len(self.game.grille))]             `	#iconlar dictionary icinde kullanarak 
+                    for i in range(len(self.game.grille))]            #iconlar dictionary icinde kullanarak
         self.icone_dic = {1 : 'icones/1.png',
                           2 : 'icones/2.png',
                           3 : 'icones/3.png',
@@ -121,5 +121,5 @@ def main():
     sys.exit(app.exec_())							# Uygulamadan cikmak
     
     
-if __name__ == '__main__':		//klasik python indentationu
+if __name__ == '__main__':		#klasik python indentationu
     main()
